@@ -13,13 +13,13 @@ def format_data(filepath):
 
 
 
-def plot_imp_exp(df1, df2, region, title='SET A TITLE'):
+def plot_imp_exp(df1, df2, region, df1_label='LABEL', df2_label='LABEL', title='SET A TITLE'):
     '''
     docstring
     '''
     x_data = range(1960, 2021)
-    y1_data = df1[region]
-    y2_data = df2[region]
+    y1_data = df1.loc[region]
+    y2_data = df2.loc[region]
     
     fig = plt.figure()
     
@@ -59,12 +59,12 @@ def plot_trade_rates(df, region_list, colors, title='SET A TITLE'):
     '''
     docstring
     '''
-    x_data = range(1960, 2021)
+    x_data = range(1959, 2021)
     fig = plt.figure(figsize=(20,10))
     ax = fig.add_subplot(1, 1, 1)
     
     for idx, region in enumerate(region_list):
-        ax.plot(x_data, df[region], label=region, color=colors[idx])
+        ax.plot(x_data, df.loc[region], label=region, color=colors[idx])
     
     plt.ylim(5, 45) 
     ax.legend()
