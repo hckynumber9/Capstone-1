@@ -23,9 +23,12 @@
 
 **World Trade and GDP Today**
 * GDP per capita has grown enormously since the 1960s from less than 1,000 USD per person to over 10,000 USD in current USD.  Trade, as measure by the percent of world GDP from imports and exports, has also greatly increased during that time.
+
 ![alt text](img/world_gdp.png "This is a title")
 ![alt text](img/world_trade.png "This is a title")
+
 * Half of total world GDP is currently concentrated in five countries: the US, China, Japan, Germnay, and India.  Current levels of trade are also shown by regions, with North America having some of the lowest trade as a percent of regional GDP and the Middle East and North Africa being near the top.
+
 ![alt text](img/top_gdp.png "This is a title")
 ![alt text](img/trade_regional.png "This is a title")
 
