@@ -3,7 +3,13 @@ import matplotlib.pyplot as plt
 
 def format_data(filepath):
     '''
-    docstring
+    Helper function to format incoming data.
+    ----------
+    filepath: path to the data.
+    
+    Returns
+    -------
+    Formatted dataframe
     '''
     x = pd.read_csv(filepath)
     x.drop(columns=['Country Code', 'Indicator Name', 'Indicator Code'], inplace=True)
@@ -15,7 +21,15 @@ def format_data(filepath):
 
 def plot_imp_exp(df1, df2, region, df1_label='LABEL', df2_label='LABEL', title='SET A TITLE'):
     '''
-    docstring
+    Helper function to plot imports and exports.
+    ----------
+    df1: dataframe.
+    df2: dataframe.
+    region: list of regions.
+    
+    Returns
+    -------
+    Plot.
     '''
     x_data = range(1960, 2021)
     y1_data = df1.loc[region]
@@ -38,7 +52,15 @@ def plot_imp_exp(df1, df2, region, df1_label='LABEL', df2_label='LABEL', title='
 
 def plot_gdp_growth_rates(df, regions, colors, title='SET A TITLE'):
     '''
-    docstring
+    Helper function to plot gdp growth rates.
+    ----------
+    df: dataframe.
+    regions: list of regions.
+    colors: list of colors for the plot.
+    
+    Returns
+    -------
+    Plot.
     '''
     x_data = range(1960, 2021)
     fig = plt.figure(figsize=(20,10))
@@ -57,7 +79,15 @@ def plot_gdp_growth_rates(df, regions, colors, title='SET A TITLE'):
     
 def plot_trade_rates(df, region_list, colors, title='SET A TITLE'):
     '''
-    docstring
+    Helper function to plot trade rates.
+    ----------
+    df: dataframe.
+    region_list: list of regions.
+    colors: list of colors for the plot.
+    
+    Returns
+    -------
+    Plot.
     '''
     x_data = range(1959, 2021)
     fig = plt.figure(figsize=(20,10))
