@@ -1,5 +1,5 @@
 # World Trade and GDP
-*Analyzing if the the trend increased trade has had an effect on global GDP.* 
+*Analyzing if the trend of increased trade has had an effect on global GDP.* 
 
 **Global Trade is Nothing New**
 * The Silk Road connected China and Europe from about 200 BC to 1500 AD, with about a two year round-trip. (refs 1, 2)
